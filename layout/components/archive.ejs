@@ -21,12 +21,12 @@ if (page.archive){
           </time>
           <% if (item.link){ %>
             <% if (item.title){ %>
-            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
+            <h3><a href="<%- item.link %>" target="_blank"><span><%= item.title %></span></a></h3>
             <% } else { %>
-            <h3 class="archive-title"><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
+            <h3><a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a></h3>
             <% } %>
           <% } else { %>
-            <h3 class="archive-title"><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
+            <h3><a href="<%- config.root %><%- item.path %>"><span><%= item.title %></span></a></h3>
           <% } %>
         </div>
       </div>
